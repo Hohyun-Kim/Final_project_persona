@@ -1,4 +1,4 @@
-## 지난 19.09~19.10까지 한 작업들을 정리 및 기입합니다.
+## 지난 '19.09 ~ '19.10까지 한 작업들을 정리 및 기입합니다.
 
 #### `nsmc_crawler.py`
 - 2019.09.29
@@ -10,5 +10,11 @@
     - MovieName 이 첫 영화 이름으로 저장되는 오류 존재
     - `MovieCode`, `MovieComeOut`, `MovieType`, `ReviewCreateTime`
       - 위 네 개 feature를 추출함에 있어서 특정 영화가 위 순서대로 지켜지지 않는 경우 발생
+- 2019.11.04
+    - version 0.0 git에 upload
+
+#### `stock_discussion_crawler.py`
+- 2019.09.03
+    - create version 0.0
 - 2019.11.04
     - version 0.0 git에 upload
