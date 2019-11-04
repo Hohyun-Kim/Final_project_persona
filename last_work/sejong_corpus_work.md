@@ -124,6 +124,9 @@ len(set(written_li).union(set(colloquial_li))) # 164485
 
 sejong_corpus_li = list(set(written_li).union(set(colloquial_li)))
 sejong_corpus_li = [i for i in sejong_corpus_li if not i[1] == 'Unk']
+
+with open('sejong_corpus_li.pkl', 'wb') as f:
+    pickle.dump(sejong_corpus_li, f, protocol=pickle.HIGHEST_PROTOCOL)
 ```
 
 ## 전처리 수행 피드백받고 새로운 corpus 뭉치 생성
@@ -137,4 +140,7 @@ colloquial_eojeol = [(i, 'Eojeol') for i in colloquial_table['Eojeol'].map(
     lambda x : re.sub('[^ㄱ-ㅎㅏ-ㅣ가-힣]', '', x)) if not len(i) < 2]
     
 eojeol_corpus_li = list(set(written_eojeol).union(set(colloquial_eojeol)))
+
+with open('eojeol_corpus_li.pkl', 'wb') as f:
+    pickle.dump(eojeol_corpus_li, f, protocol=pickle.HIGHEST_PROTOCOL)
 ```
