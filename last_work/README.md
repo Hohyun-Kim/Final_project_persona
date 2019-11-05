@@ -18,3 +18,10 @@
     - create version 0.0
 - 2019.11.04
     - version 0.0 git에 upload
+
+#### `sejong_corpus_work.md`
+- 2019.09.06
+    - 띄어쓰기 전처리를 위한 세종 corpus 데이터 수집
+    - `eojeol_morphtag.pkl`; 사실상 사용 X
+    - `sejong_corpus_li.pkl`; 162,572개의 단어가 들어있음
+    - `eojeol_corpus_li.pkl`; 1,172,449개의 단어 (어절 포함)
